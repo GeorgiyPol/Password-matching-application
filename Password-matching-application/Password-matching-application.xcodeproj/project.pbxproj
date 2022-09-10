@@ -56,15 +56,63 @@
 		406A4B2F28CC154E003097B5 /* Password-matching-application */ = {
 			isa = PBXGroup;
 			children = (
-				406A4B3028CC154E003097B5 /* AppDelegate.swift */,
-				406A4B3228CC154E003097B5 /* SceneDelegate.swift */,
-				406A4B3428CC154E003097B5 /* ViewController.swift */,
-				406A4B3628CC154E003097B5 /* Main.storyboard */,
-				406A4B3928CC154F003097B5 /* Assets.xcassets */,
-				406A4B3B28CC154F003097B5 /* LaunchScreen.storyboard */,
-				406A4B3E28CC154F003097B5 /* Info.plist */,
+				406A4B4528CC15BB003097B5 /* Sources */,
+				406A4B4428CC15AE003097B5 /* Resources */,
 			);
 			path = "Password-matching-application";
+			sourceTree = "<group>";
+		};
+		406A4B4428CC15AE003097B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				406A4B3E28CC154F003097B5 /* Info.plist */,
+				406A4B3B28CC154F003097B5 /* LaunchScreen.storyboard */,
+				406A4B3928CC154F003097B5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		406A4B4528CC15BB003097B5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				406A4B4928CC162B003097B5 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		406A4B4628CC15DC003097B5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				406A4B3628CC154E003097B5 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		406A4B4728CC15E7003097B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				406A4B3428CC154E003097B5 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		406A4B4828CC15EF003097B5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				406A4B3028CC154E003097B5 /* AppDelegate.swift */,
+				406A4B3228CC154E003097B5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		406A4B4928CC162B003097B5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				406A4B4828CC15EF003097B5 /* App */,
+				406A4B4728CC15E7003097B5 /* Controller */,
+				406A4B4628CC15DC003097B5 /* Storyboard */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 636TS9JX4X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Password-matching-application/Info.plist";
+				INFOPLIST_FILE = "Password-matching-application/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 636TS9JX4X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Password-matching-application/Info.plist";
+				INFOPLIST_FILE = "Password-matching-application/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

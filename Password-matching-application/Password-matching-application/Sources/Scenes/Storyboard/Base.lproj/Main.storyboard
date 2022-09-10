@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xEP-6N-ffF">
-                                <rect key="frame" x="30" y="214" width="354" height="218"/>
+                                <rect key="frame" x="30" y="214" width="354" height="286"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="there will be a hacked password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ru-VE-aEq">
                                         <rect key="frame" x="34" y="0.0" width="286" height="24"/>
@@ -55,6 +55,9 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
                                             <color key="baseBackgroundColor" red="0.58923399450000002" green="0.49474036690000001" blue="0.462039113" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="passGen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jpa-8K-pce"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="dpl-6r-PY9">
                                         <rect key="frame" x="32" y="187" width="290.5" height="31"/>
@@ -82,6 +85,17 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecX-XL-REC">
+                                        <rect key="frame" x="108" y="248" width="138" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Normal/Dark" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <color key="baseBackgroundColor" red="0.58923399450000002" green="0.49474036690000001" blue="0.462039113" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hy-3F-A2x"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -93,6 +107,12 @@
                             <constraint firstItem="xEP-6N-ffF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="IuH-Kb-iT2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="2Ru-VE-aEq" id="Bdc-Jl-WnP"/>
+                        <outlet property="mySwitch" destination="VJR-aL-MLz" id="lPf-O9-Hga"/>
+                        <outlet property="spinner" destination="rob-Ay-CdZ" id="5MR-wT-NtR"/>
+                        <outlet property="textField" destination="4NL-jv-rky" id="GJM-6l-wJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
